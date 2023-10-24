@@ -1,20 +1,89 @@
 <!--komment-->
-<!DOCTYPE html><!--HTML5 nyelv-->
-<html lang="hu"><!--az egész web oldal ebben tag-ben irodik és itt állitható be a nyelv -->
-<head><!-- a böngészönek ad utasításokat-->
-    <meta charset="UTF-8"><!--karakter kódolás beállitása-->
+<!DOCTYPE html> <!--HTML5 nyelv-->
+<html lang="hu"> <!--az egész weboldal ebben a tag-ben íródik és itt állítható be a nyelv-->
+<head> <!--a böngészőnek ad utasításokat-->
+    <meta charset="UTF-8"> <!--karakterkódolás beállítása-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"><!--külső (external) stiluslap csatolása a html fáljhoz-->
-    <style>
-    h1{
-        color:pink;
-    }
-    </style><!--belső (internal) stilusbeállitas-->
-    <title></title><!--böngésző cím sorába megjelenő név-->
+    <link rel="stylesheet" href="css/style.css"> <!--külső (external) stíluslap csatolása a html fáljhoz-->
+    <style> 
+        h1 {
+            color: pink;
+        }
+    </style> <!--belső (internal) stílusbeállítás-->
+    <title>Document</title> <!--böngésző címsorában megjelenő név-->
 </head>
-<body><!--a flhasználónak ad információkat-->
-    <h1 style="color:blueviolet;"></h1><!-- címsor 1-es színtü (főcímsor) tag-hez írt (inline) stilusbeállitas-->
-    <p></p><!--bekezdés létrehozása-->
-    <img src="" alt"">
+<body> <!--a felhasználónak ad információkat-->
+    <h1 style="color:blue;"></h1> <!--címsor 1-es szintű (főcím), tag-hez írt (inline) stílusbeállítás-->
+    <h2></h2> - <h6></h6>
+    <p></p> <!--bekezdések létrehozása-->
+    <img src="" alt="" title=""> <!--kép beillesztése; src: forrásválasztó 1. img/kep.jpg; 2. egy link; alt: ha nem jeleníthető meg a kép; title: ha a kép fölé viszem az egeret-->
+    <a href="https://..." target="_blank">LINK</a> <!--link, amely új oldalon nyílik meg-->
+    <a href="cica.html">SAJÁT OLDALRA NAVIGÁL</a>
+    <a href="#leiras">UGRÓPONT</a>
+    <br> <!--sortörés-->
+    <hr> <!--vízszintes vonal-->
+    <ul> 
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> <!--számozatlan felsorolás emmet: 5 elemből álló list (ul>li*5)-->
+    <ol>
+        <li></li>
+        <li></li>
+    </ol> <!--számozott felsorolás-->
+    <ul class="cica" id="kutya">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> <!--emmet: ul.cica#kutya>li*5-->
+
+    <!--TÁBLÁZAT-->
+    <table>
+        <caption>TÁBLÁZAT CÍME</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Adat</th> <!--fejléc cella, sorok összevonása-->
+            </tr> <!--táblázat sora-->
+        </thead> <!--a táblázat fejléce-->
+        <tbody>
+            <tr>
+                <td>Cica</td> <!--adat cella-->
+                <td>Kutya</td>
+                <td colspan="2">Madár</td> <!--oszlopok összevonása-->
+            </tr>
+        </tbody> <!--táblázat törzse-->
+        <tfoot>
+            <td></td>
+            <td></td>
+        </tfoot> <!--a táblázat lábléce-->
+    </table>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table> <!--emmet (gyorskód): table>tr*4>td*2 ez egy 2 oszlopos 4 soros táblázat-->
+    <div></div> <!--keret-->
+    <b></b> vagy <strong></strong> <!--félkövér betűs szöveg-->
+    <i></i> vagy <em></em> <!--dőlt betűs szöveg-->
+    <u></u> <!--aláhúzott szöveg-->
+    <span></span> <!--egyedileg formázott szövegnél alkalmazzuk-->
+    
 </body>
 </html>
